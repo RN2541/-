@@ -36,61 +36,63 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text("Calculator"),
         ),
-        body: Column(
-          children: [
-            Container(
-              alignment: Alignment.centerRight,
-              child: Text(
-                "Result",
-                style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+        body: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  "Result",
+                  style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            Expanded(
-              child: Divider(),
-            ),
-            Column(
-              children: [
-                Row(
-                  children: [
-                    myButton("7"),
-                    myButton("8"),
-                    myButton("9"),
-                    myButton("/"),
-                  ],
-                ),
-                Row(
-                  children: [
-                    myButton("4"),
-                    myButton("5"),
-                    myButton("6"),
-                    myButton("X"),
-                  ],
-                ),
-                Row(
-                  children: [
-                    myButton("1"),
-                    myButton("2"),
-                    myButton("3"),
-                    myButton("-"),
-                  ],
-                ),
-                Row(
-                  children: [
-                    myButton("."),
-                    myButton("0"),
-                    myButton("00"),
-                    myButton("+"),
-                  ],
-                ),
-                Row(
-                  children: [
-                    myButton("CLEAR"),
-                    myButton("="),
-                  ],
-                ),
-              ],
-            ),
-          ],
+              Expanded(
+                child: Divider(),
+              ),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      myButton("7"),
+                      myButton("8"),
+                      myButton("9"),
+                      myButton("/"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      myButton("4"),
+                      myButton("5"),
+                      myButton("6"),
+                      myButton("X"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      myButton("1"),
+                      myButton("2"),
+                      myButton("3"),
+                      myButton("-"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      myButton("."),
+                      myButton("0"),
+                      myButton("00"),
+                      myButton("+"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      myButton("CLEAR"),
+                      myButton("="),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

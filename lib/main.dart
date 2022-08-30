@@ -14,10 +14,26 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String result = "0";
+  buttonPressed(String value) {
+    print(value);
+    setState(() {
+      if (value == "CLEAR") {
+        result = "0";
+      } else {
+        if (result == "0") {
+          result = value;
+        } else {
+          result = result + value;
+        }
+      }
+    });
+  }
+
   Widget myButton(String buttonLabel) {
     return Expanded(
       child: OutlinedButton(
-        onPressed: () {},
+        onPressed: () => buttonPressed(buttonLabel),
         child: Text(
           buttonLabel,
           style: TextStyle(

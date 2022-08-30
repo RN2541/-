@@ -38,42 +38,56 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Row(
-              children: [
-                myButton("7"),
-                myButton("8"),
-                myButton("9"),
-                myButton("/"),
-              ],
+            Container(
+              alignment: Alignment.centerRight,
+              child: Text(
+                "Result",
+                style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+              ),
             ),
-            Row(
-              children: [
-                myButton("4"),
-                myButton("5"),
-                myButton("6"),
-                myButton("X"),
-              ],
+            Expanded(
+              child: Divider(),
             ),
-            Row(
+            Column(
               children: [
-                myButton("1"),
-                myButton("2"),
-                myButton("3"),
-                myButton("-"),
-              ],
-            ),
-            Row(
-              children: [
-                myButton("."),
-                myButton("0"),
-                myButton("00"),
-                myButton("+"),
-              ],
-            ),
-            Row(
-              children: [
-                myButton("CLEAR"),
-                myButton("="),
+                Row(
+                  children: [
+                    myButton("7"),
+                    myButton("8"),
+                    myButton("9"),
+                    myButton("/"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    myButton("4"),
+                    myButton("5"),
+                    myButton("6"),
+                    myButton("X"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    myButton("1"),
+                    myButton("2"),
+                    myButton("3"),
+                    myButton("-"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    myButton("."),
+                    myButton("0"),
+                    myButton("00"),
+                    myButton("+"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    myButton("CLEAR"),
+                    myButton("="),
+                  ],
+                ),
               ],
             ),
           ],

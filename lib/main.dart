@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Calculator"),
+          title: Text("Calculator By ice"),
         ),
         body: SafeArea(
           child: Column(
@@ -77,7 +77,10 @@ class _MyAppState extends State<MyApp> {
                 alignment: Alignment.centerRight,
                 child: Text(
                   result,
-                  style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue),
                 ),
               ),
               Expanded(
@@ -113,7 +116,6 @@ class _MyAppState extends State<MyApp> {
                     children: [
                       myButton("."),
                       myButton("0"),
-                      myButton("00"),
                       myButton("+"),
                     ],
                   ),

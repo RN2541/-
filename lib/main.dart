@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
               Container(
                 alignment: Alignment.centerRight,
                 child: Text(
-                  "Result",
+                  result,
                   style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
                 ),
               ),
